@@ -9,7 +9,7 @@
 </p>
 
 <h4 align = "center">
-   <a href="https://desafio-asseinfo-react.vercel.app/">DEPLOY >></a>
+   <a href="https://desafio-asseinfo-react.vercel.app/">DEPLOY >></a> ||
    <a href="https://github.com/igorbrasilc/desafio-asseinfo">Projeto em Vanilla JS</a>
 </h4>
 
