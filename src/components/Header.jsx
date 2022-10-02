@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export default function Header() {
     return (
         <HeaderContainer>
-            <img src="/cash2.svg" class="logo" alt="logo" />
+            <img src="/cash2.svg" className="logo" alt="logo" />
             <h1>Saque 24h</h1>
         </HeaderContainer>
     )

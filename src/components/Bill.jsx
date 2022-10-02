@@ -1,20 +1,14 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { BILLS_BY_COLOR } from '../assets/GLOBAL_VARIABLES';
 
 export default function Bill({value, quantity}) {
-
-    const color = identifyColor(value);
-
-    function identifyColor(value) {
-        return;
-    }
-
-
+    const color = BILLS_BY_COLOR[value];
     return (
         <BillContainer>
-            <Bill>
+            <BillCard color={color}>
                 <p>{value}</p>
-            </Bill>
+            </BillCard>
             <p>x{quantity}</p>
         </BillContainer>
     )
@@ -26,12 +20,12 @@ const BillContainer = styled.div`
     align-items: center;
 `;
 
-const Bill = styled.div`
+const BillCard = styled.div`
     width: 80px;
     height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-style: outset; 
-    background-color: ${color};
+    background-color: ${props => props.color};
 `;
